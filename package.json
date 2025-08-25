@@ -1,0 +1,21 @@
+{
+  "name": "mini-project-async",
+  "version": "1.0.0",
+  "homepage": "https://markiianperliak.github.io/mini-project-async/",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --no-cache --public-url /mini-project-async/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "server": "npx json-server db.json"
+  },
+  "author": "Markiian",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "node": "^24.6.0",
+    "parcel": "^2.15.4"
+  }
+}

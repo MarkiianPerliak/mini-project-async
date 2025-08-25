@@ -1,0 +1,61 @@
+body {
+    font-family: "Fredoka";
+}
+
+.flexbox {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.loadmore {
+display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.displayblock {
+    display: block;
+}
+
+
+
+input {
+        font-family: "Fredoka";
+        border-radius: 15px;
+        border: 1px black solid;
+        padding: 5px 10px;
+        background-color: transparent;
+}
+
+select {
+        font-family: "Fredoka";
+                border-radius: 15px;
+        border: 1px black solid;
+        padding: 5px 10px;
+        background-color: transparent;
+}
+
+button {
+        font-family: "Fredoka";
+        border-radius: 15px;
+        border: 1px black solid;
+        padding: 5px 10px;
+        background-color: transparent;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    border: 2px black solid;
+    border-radius: 15px;
+    text-align: center;
+    width: 500px;
+}
