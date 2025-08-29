@@ -1,0 +1,57 @@
+body {
+  font-family: Fredoka;
+}
+
+.flexbox {
+  justify-content: center;
+  gap: 15px;
+  display: flex;
+}
+
+.image {
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.loadmore {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.displayblock {
+  display: block;
+}
+
+#search-form {
+  justify-content: center;
+  gap: 10px;
+  display: flex;
+}
+
+input, select, button {
+  background-color: #0000;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-family: Fredoka;
+}
+
+ul {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  display: flex;
+}
+
+li {
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 15px;
+  width: 500px;
+}
+/*# sourceMappingURL=mini-project-async.2cdaf7bc.css.map */
