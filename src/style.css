@@ -8,6 +8,13 @@ body {
     justify-content: center;
 }
 
+.image {
+    width: 150px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
 .loadmore {
 display: none;
     margin-left: auto;
@@ -18,6 +25,11 @@ display: none;
     display: block;
 }
 
+#search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 
 
 input {

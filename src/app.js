@@ -5,25 +5,25 @@ const loadMoreButton = document.querySelector(".loadmore")
 
 function searchActivate(data) {
     console.log(data)
-    const elements = data.map(element => {
+    const elements = data.hits.map(element => {
         const html = `
         <li class="photo-card">
-  <img src="${element.downloads}" alt="image" />
+  <img class="image" src="${element.largeImageURL}" alt="image" />
   <div class="stats">
     <p class="stats-item">
-      <i class="material-icons">thumb_up</i>
+      <i class="material-icons">Likes:</i>
       ${element.likes}
     </p>
     <p class="stats-item">
-      <i class="material-icons">visibility</i>
+      <i class="material-icons">Views:</i>
       ${element.views}
     </p>
     <p class="stats-item">
-      <i class="material-icons">comment</i>
+      <i class="material-icons">Comments:</i>
       ${element.comments}
     </p>
     <p class="stats-item">
-      <i class="material-icons">cloud_download</i>
+      <i class="material-icons">Downloads:</i>
       ${element.downloads}
     </p>
   </div>
@@ -32,7 +32,7 @@ function searchActivate(data) {
         return html
     })
     const string = elements.join(``)
-    list.innerHTML = string;
+    list.insertAdjacentHTML("beforeend", string)
 }
 
 let cards = 12;
@@ -57,5 +57,5 @@ form.addEventListener("submit", (event) => {
 loadMoreButton.addEventListener("click", (event) => {
     page++
     console.log(page, cards)
-    getAPI(page, cards).then((result) => result.json()).then((resultdata) => searchActv(resultdata))
+    getAPI(page, cards).then((result) => result.json()).then((resultdata) => searchActivate(resultdata))
 })
